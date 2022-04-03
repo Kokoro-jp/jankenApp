@@ -2,7 +2,7 @@
 
 
 # じゃんけんメソッドの作成
-def janken
+def janken 
 
     puts "----------------------------------"
     puts "じゃんけん..."
@@ -100,7 +100,7 @@ def attimuite_lose
 
     if player_face == computer_finger
         puts "相手は「#{choices[computer_finger]}」を指しました。あなたは「#{choices[player_face]}」を向きました。"
-        puts "あなたの勝ちです！"
+        puts "あなたの負け...です。"
         return false
     elsif (player_face == 0) && (computer_finger != 0) ||
         (player_face == 1) && (computer_finger != 1) ||
